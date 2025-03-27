@@ -1,0 +1,22 @@
+{
+  "tasks": {
+    "start": "deno run -A --node-modules-dir npm:vite",
+    "build": "deno run -A --node-modules-dir npm:vite build",
+    "preview": "deno run -A --node-modules-dir npm:vite preview",
+    "deploy": "deno run -A scripts/deploy.ts",
+    "init-and-deploy": "deno run -A scripts/deploy.ts --first-time"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  },
+  "imports": {
+    "react": "npm:react@19.0.0",
+    "react-dom": "npm:react-dom@19.0.0",
+    "react-dom/client": "npm:react-dom@19.0.0/client",
+    "react/jsx-runtime": "npm:react@19.0.0/jsx-runtime",
+    "tailwindcss": "npm:tailwindcss@3.3.0",
+    "postcss": "npm:postcss@8.4.31",
+    "autoprefixer": "npm:autoprefixer@10.4.16"
+  }
+}
